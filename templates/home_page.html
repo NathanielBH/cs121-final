@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>{{title}}</title>
+</head>
+<body>
+
+    <h1>Microsoft Face Scanner</h1>
+	
+	<section>
+		<p>
+			"Welcome to to the microsoft team face scanning safe. We care about security. The world is a very dangerous place, but it doesn't have to be. 
+			With our revolutionary never before seen technology you won't have to worry about theft anymore. Unless a thief has the means and motive to surgically remove 
+			their face and have your face put in it's place, then you're probably all good."
+		</p>
+	 </section>
+
+
+     <form id="scan_form" method="POST" action="{{ url_for('scan_on_r') }}">
+        <button id="scan_button" type="submit">Scan</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/static/scan_face.js"></script>
+
+
+</body>
+</html>
