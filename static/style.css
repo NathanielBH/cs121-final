@@ -1,0 +1,85 @@
+h1{
+    text-align: center;
+}
+
+.home{
+  max-width:25%;
+  padding-left: 1%;
+  padding-right:1%;
+  text-align: center;
+  margin: 0 auto;
+  border: black solid;
+  background-color: white;
+}
+
+#scan_form{
+  padding-top:5%;
+}
+#scan_button {
+    background-color: black; /* change button color */
+    color: #13c913;
+    font-size: 32px; /* increase button font size */
+    width: 30%; /* set button width to 50% of the parent container */
+    margin: 0 auto; /* center the button horizontally */
+    display: block; /* make button a block-level element to center it vertically */
+}
+
+#scan_button:hover{
+  color: white;
+}
+
+.acessed{
+  margin:0 auto;
+  background-color: white;
+  width: 18%;
+  border: solid black;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-bottom:1%;
+}
+
+#acessed {
+    text-align: center; /* center the text in the section */
+    margin-bottom: 50px; /* add some margin to the bottom */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    font-size: 14px; /* increase the font size */
+    padding: 2px; /* add some padding */
+    margin-bottom: 20px; /* add some margin to the bottom */
+    width: 20%; /* set the width to 50% of the parent container */
+}
+
+button {
+    background-color: black; /* change button color */
+    color: #13c913;
+    font-size: 22px; /* increase button font size */
+    width: 20%; /* set button width to 50% of the parent container */
+    margin: 0 auto; /* center the button horizontally */
+    display: block; /* make button a block-level element to center it vertically */
+}
+
+button:hover{
+  color: white;
+}
+
+#message {
+    margin-top: 20px; /* add some margin to the top */
+    text-align: center; /* center the text */
+}
+
+#add_form2 label{
+  background-color:white;
+  border: solid black;
+  padding: 0 1% 0 1%;
+}
+
+body {
+    background-image: url("https://wallpaperaccess.com/full/2106427.jpg");
+  }
