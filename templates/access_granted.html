@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">>
     <title>{{title}}</title>
 </head>
 <body>
 
     <h1>Access Granted</h1>
 	
-	<section>
+	<section class = "acessed">
 		<p>
 			You have been granted access to this webpage. You may now add a face to the database. 
 		</p>
 	 </section>
 
-    <button id="add_button" type = "submit">Add Face</button>
-    
-
-    <div id="message">Face Scan Successful</div>
+     <form id = "add_form2" method = "POST" action = "{{ url_for('adding_face') }}" >
+        <label>Please Enter a Name</label>
+        <input type="text" id="fname" name="fname"><br>
+        <button id="add_button" type="submit">Add Face</button>
+    </form>   
+     
+    <div id="message"></div>
 
     <form id="add_form" method="POST" action="{{ url_for('home') }}">
         <button id="home_button" type = "submit">Home</button>
